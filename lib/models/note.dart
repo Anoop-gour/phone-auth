@@ -1,12 +1,20 @@
 class Note{
-  late String  uid, title,price,location,description;
+  late String  uid, type,name,price,description,color,quantity,size;
   String image = '';
+  // double price;
 
   Note.fromMap(Map m)
       : uid = m['uid'].toString(),
-        title =  m['title'].toString(),
+        type =  m['type'].toString(),
         price = m['price'].toString(),
-        location = m['location'].toString(),
+        name = m['name'].toString(),
+        image = m['image'].toString(),
         description = m['description'].toString(),
-        image = m['image'].toString();
+        color = m['color'].toString(),
+        quantity = m['quantity'].toString(),
+        size = m['size'].toString()
+
+
+
+  ;
 }
